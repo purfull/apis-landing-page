@@ -1,0 +1,101 @@
+.dashboard {
+  display: flex;
+  min-height: 100vh;
+//   background-color: #f9f9fb; // replace with your theme background
+
+  main {
+    flex: 1;
+    padding: 2rem;
+    width: calc(100% - 16rem);
+    position: absolute;
+    right: 0;
+
+    .container {
+      max-width: 80rem; // ~1280px
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+    }
+
+    h1 {
+      font-size: 1.875rem; // text-3xl
+      font-weight: 700;
+      color: #111;
+      margin-bottom: 0.5rem;
+    }
+
+    p {
+    //   color: #6b6b6b; // muted-foreground
+      font-size: 1rem;
+    }
+
+    /* Stats Grid */
+    .stats-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 1.5rem;
+
+      @media (min-width: 768px) {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      @media (min-width: 1024px) {
+        grid-template-columns: repeat(4, 1fr);
+      }
+    }
+
+    /* Recent Activity Card */
+    .recent-activity {
+      .log-item {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 1rem;
+        // background-color: rgba(0, 0, 0, 0.03);
+        border-radius: 0.5rem;
+        transition: background 0.2s ease;
+
+        &:hover {
+          background-color: rgba(0, 0, 0, 0.05);
+        }
+
+        .left {
+          display: flex;
+          align-items: center;
+          gap: 1rem;
+
+          code {
+            font-size: 0.875rem;
+            font-family: monospace;
+            color: #111;
+          }
+
+          .badge {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.75rem;
+            padding: 0.25rem 0.5rem;
+            border-radius: 0.25rem;
+
+            &.success {
+              background-color: #6200ed;
+              color: white;
+            }
+
+            &.error {
+              background-color: #dc2626;
+              color: white;
+            }
+          }
+        }
+
+        .time {
+          font-size: 0.875rem;
+          color: #6b6b6b;
+        }
+      }
+    }
+  }
+}

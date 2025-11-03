@@ -1,0 +1,146 @@
+.hero-container {
+  padding: 6vh 0;
+  h1,
+  p,
+  .hero-cta-container {
+    text-align: center;
+    padding: 10px 0;
+  }
+  p {
+    max-width: 50%;
+    text-align: justify;
+  }
+  .hero-title {
+    max-width: 65%;
+    font-size: 3.5rem;
+    margin: auto;
+  }
+  .hero-cta-container {
+    display: flex;
+    justify-content: center;
+    gap: 22px;
+  }
+
+  // carousel
+  .hero-carousel {
+    margin: auto;
+    margin-top: 2rem;
+    width: 90%;
+    gap: 22px;
+
+    h1 {
+      text-align: left;
+    }
+    // max-width: 1100px;
+
+    .slick-slide {
+      padding: 0 10px;
+    }
+
+    .slick-list {
+      margin: 0 -10px;
+    }
+    .carousel-card {
+      position: relative;
+      background: #fff;
+      border-radius: 12px;
+      overflow: hidden;
+      //   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+      // border: 1px solid gray;
+      transition: transform 0.3s ease;
+
+      //   &:hover {
+      //     transform: translateY(-5px);
+      //   }
+
+      video {
+      width: 100%;
+      height: 100%;
+      }
+
+      img {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+      }
+
+      .card-content {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 2;
+        color: white;
+        padding: 20px;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(
+          to top,
+          rgba(0, 0, 0, 0.8) 20%,
+          rgba(0, 0, 0, 0) 80%
+        ); // fade effect like Hotstar
+
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-end; // text at bottom
+
+        h1 {
+          text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+          // margin: 0.5rem 0;
+          // font-size: 1.2rem;
+          // font-weight: 600;
+        }
+
+        p {
+          max-width: 60%;
+          text-align: left;
+          font-size: 1.2rem;
+          color: #fff;
+        }
+
+        a {
+          font-size: 18px;
+          font-weight: 600;
+          display: flex;
+          align-items: flex-end;
+          gap: 12px;
+        }
+      }
+    }
+
+    .slick-prev,
+    .slick-next {
+      z-index: 10;
+    }
+
+    .slick-prev:before,
+    .slick-next:before {
+      font-size: 25px;
+      color: #333;
+    }
+
+    .slick-dots li button:before {
+      font-size: 12px;
+      color: #fff;
+    }
+
+    .slick-dots li.slick-active button:before {
+      color: #6200ed;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-container{
+  p {
+    max-width: 90%;
+    text-align: center;
+  }
+  .hero-title {
+    max-width: 100%;
+    font-size: 1.75rem;
+    margin: auto;
+  }
+
+  }
+}

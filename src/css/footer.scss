@@ -1,0 +1,16 @@
+.footer-container {
+    width: 82.5%;
+    border-top: 1px solid #ccc;
+    // height: 25vh;
+    margin: auto;
+  text-align: center;
+  padding: 4vh 0;
+  display: flex;
+  justify-content: space-between;
+
+  
+  .dev-name {
+    font-weight: 600;
+    color: #6200ed; // your brand color
+  }
+}

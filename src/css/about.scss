@@ -1,0 +1,57 @@
+.about-container {
+  // max-width: 900px;
+  margin: 0 auto;
+  padding: 3rem 5%;
+  padding-top: 100px;
+  line-height: 1.7;
+  display: grid;
+  gap: 14vh;
+  //   color: #f3f3f3;
+  .about {
+    display: flex;
+
+    .about-title {
+      width: 40%;
+    }
+    p {
+      width: 60%;
+      text-align: justify;
+    }
+  }
+
+  .tech-icons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 18px;
+  font-size: 2rem; // bigger logos
+  margin: 1rem 0;
+
+  i {
+    transition: transform 0.2s ease;
+    cursor: pointer;
+
+    &:hover {
+      transform: scale(1.2);
+    }
+  }
+}
+
+}
+
+
+@media (max-width: 768px) {
+  .about-container {
+  .about {
+    display: flex;
+    flex-direction: column;
+
+    .about-title {
+      width: 100%;
+    }
+    p {
+      width: 100%;
+      text-align: justify;
+    }
+  }
+  }
+}

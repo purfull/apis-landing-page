@@ -1,0 +1,99 @@
+.support-page {
+  display: flex;
+  min-height: 100vh;
+  background: var(--background);
+
+  .support-content {
+    flex: 1;
+    padding: 2rem;
+    width: calc(100% - 16rem);
+    position: absolute;
+    right: 0;
+
+    .support-container {
+    padding: 0 2rem;
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+      .support-header {
+        h1 {
+          font-size: 1.875rem;
+          font-weight: 700;
+          color: var(--foreground);
+          margin-bottom: 0.25rem;
+        }
+
+        p {
+          color: var(--muted-foreground);
+        }
+      }
+
+      .support-card {
+        background: var(--card);
+        border-radius: 12px;
+        box-shadow: var(--shadow-sm);
+
+        .description {
+          color: var(--muted-foreground);
+          font-size: 0.9rem;
+          margin-top: 0.25rem;
+        }
+
+        .support-form {
+          display: flex;
+          flex-direction: column;
+          gap: 1.5rem;
+          margin-top: 1rem;
+
+          .form-group {
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+
+            label {
+              font-weight: 500;
+              color: var(--foreground);
+            }
+
+            input,
+            select,
+            textarea {
+            //   border: 1px solid var(--border);
+              border-radius: 8px;
+            //   padding: 0.75rem;
+              font-size: 0.95rem;
+              background: var(--input);
+              color: var(--foreground);
+              outline: none;
+              transition: border-color 0.2s ease;
+
+            //   &:focus {
+            //     border-color: var(--primary);
+            //   }
+            }
+
+            textarea {
+              resize: vertical;
+            }
+          }
+
+          .submit-btn {
+            align-self: flex-start;
+            // background: var(--primary);
+            color: #fff;
+            font-weight: 500;
+            border: none;
+            border-radius: 8px;
+            padding: 0.75rem 1.5rem;
+            cursor: pointer;
+            transition: background 0.3s ease;
+
+            // &:hover {
+            //   background: var(--primary-hover, (var(--primary), 5%));
+            // }
+          }
+        }
+      }
+    }
+  }
+}
