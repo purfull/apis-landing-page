@@ -8,6 +8,7 @@ import Pricing from "../components/Pricing";
 import Features from "../components/Features";
 import Testimonials from "../components/Testimonials";
 import Footer from "../components/Footer";
+import HeroSection from "../components/HeroSection";
 
 const HomePage = () => {
   const location = useLocation();
@@ -20,18 +21,19 @@ const HomePage = () => {
       }
     }
   }, [location]);
-    return ( 
-        <div className="">
-            <Hero id="home"/>
-            <HowItWorks />
-            <Pricing />
-            <Features />
-            <Testimonials />
-        <About id="about"/>
-        {/* <Contact id="contact"/> */}
-        <Footer />
-        </div>
-     );
-}
- 
+  return (
+    <div className="">
+      <HeroSection id="home" />
+      {/* <Hero id="home"/> */}
+      <HowItWorks />
+      {/* <Pricing /> */}
+      <Features />
+      <Testimonials />
+      <About id="about" />
+      {/* <Contact id="contact"/> */}
+      <Footer />
+    </div>
+  );
+};
+
 export default HomePage;
