@@ -5,17 +5,20 @@ const highlights = [
   {
     icon: Code2,
     title: "Expert Development",
-    description: "Specialized in React, Node.js, and modern web technologies for cutting-edge solutions.",
+    description:
+      "Specialized in React, Node.js, and modern web technologies for cutting-edge solutions.",
   },
   {
     icon: Cloud,
     title: "Reliable Hosting",
-    description: "Enterprise-grade VPS infrastructure with 99.9% uptime and daily backups.",
+    description:
+      "Enterprise-grade VPS infrastructure with 99.9% uptime and daily backups.",
   },
   {
     icon: Users,
     title: "Tailored Solutions",
-    description: "We understand small business needs and create custom solutions that drive results.",
+    description:
+      "We understand small business needs and create custom solutions that drive results.",
   },
 ];
 
@@ -30,12 +33,20 @@ const About = () => {
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
           >
-            <h2 className="text-4xl md:text-5xl font-bold mb-6">Why Choose Us?</h2>
+            <h2 className="text-4xl md:text-5xl font-bold mb-6">
+              Why Choose Us?
+            </h2>
             <p className="text-xl text-muted-foreground mb-8 leading-relaxed">
-              We're not just another web agency. We're your technology partner, dedicated to helping small and medium businesses succeed online without the technical complexity.
+              We're not just another web agency. We're your technology partner,
+              dedicated to helping small and medium businesses succeed online
+              without the technical complexity.
             </p>
             <p className="text-lg text-muted-foreground mb-8 leading-relaxed">
-              With years of experience in React, Node.js, and VPS hosting, we've helped hundreds of businesses establish a strong online presence. Our all-in-one approach means you get a beautiful website, reliable hosting, and ongoing support — all in one affordable monthly plan.
+              With years of experience in React, Node.js, and VPS hosting, we've
+              helped hundreds of businesses establish a strong online presence.
+              Our all-in-one approach means you get a beautiful website,
+              reliable hosting, and ongoing support — all in one affordable
+              monthly plan.
             </p>
           </motion.div>
 
@@ -60,7 +71,9 @@ const About = () => {
                 </div>
                 <div>
                   <h3 className="text-xl font-bold mb-2">{highlight.title}</h3>
-                  <p className="text-muted-foreground">{highlight.description}</p>
+                  <p className="text-muted-foreground">
+                    {highlight.description}
+                  </p>
                 </div>
               </motion.div>
             ))}

@@ -23,7 +23,7 @@ import "../css/navBar.scss";
 
 const NavBar = () => {
   const [isOpen, setIsOpen] = useState(false);
-  const [isLogin, setIsLogin] = useState(true);
+  const [isLogin, setIsLogin] = useState(false);
   const [showPreview, setShowPreview] = useState(false);
 
   const location = useLocation();
@@ -69,17 +69,17 @@ const NavBar = () => {
                   API Docs
                 </a>
               </li>
-              {!isLogin && (
-                <Link to="/login">
-                  <Button
-                    className="text-md shadow-lg hover:shadow-xl transition-all duration-300"
-                    onClick={() => handleNavClick("login")}
-                  >
-                    <User size={18} />
-                    Sign in
-                  </Button>
-                </Link>
-              )}
+              {/* {!isLogin && ( */}
+              <Link to="/login">
+                <Button
+                  className="text-md shadow-lg hover:shadow-xl transition-all duration-300"
+                  onClick={() => handleNavClick("login")}
+                >
+                  <User size={18} />
+                  Sign in
+                </Button>
+              </Link>
+              {/* )} */}
               {/* {isLogin && (
                 <li className="nav-funds ">
                   <a href="">
@@ -88,23 +88,6 @@ const NavBar = () => {
                   </a>
                 </li>
               )} */}
-              {isLogin && (
-                <Link to="/dashboard" className="nav-funds">
-                <li className="available-funds">
-                  <a href="">
-                    <BanknoteArrowUp />
-                    ₹100.00
-                  </a>
-                </li>
-                  <Button
-                    className="text-md transition-all duration-300"
-                    onClick={() => handleNavClick("dashboard")}
-                  >
-                    {/* <User size={18} /> */}
-                    Add Funds
-                  </Button>
-                </Link>
-              )}
             </ul>
           </div>
 
