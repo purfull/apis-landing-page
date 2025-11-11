@@ -21,6 +21,7 @@ const HomePage = () => {
       }
     }
   }, [location]);
+
   return (
     <div className="">
       <HeroSection id="home" />

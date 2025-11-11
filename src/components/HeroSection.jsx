@@ -18,7 +18,7 @@ const HeroSection = () => {
           {/* Tagline */}
           <div className="inline-block px-3 sm:px-4 py-1.5 sm:py-2 bg-primary/10 rounded-full border border-primary/20 mb-2 sm:mb-4">
             <span className="text-xs sm:text-sm font-medium text-primary tracking-wide">
-              🚀 Empower Your Apps With Scalable APIs
+              🚀 Empower Your Apps with Powerful APIs
             </span>
           </div>
 
@@ -26,14 +26,20 @@ const HeroSection = () => {
           <h1 className="text-3xl sm:text-4xl md:text-6xl lg:text-7xl font-bold tracking-tight leading-snug">
             Build. Integrate. Scale —{" "}
             <span className="bg-gradient-primary from-primary to-accent bg-clip-text text-transparent">
-              Smarter With Our APIs
+              Faster with Our APIs
             </span>
           </h1>
 
           {/* Description */}
-          <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-muted-foreground max-w-2xl mx-auto px-2 sm:px-0">
-            Connect powerful APIs, monitor your usage, and manage credits
-            easily. No limits. No lag. Just seamless developer experience.
+          <p className="text-base sm:text-lg md:text-xl lg:text-xl text-muted-foreground max-w-2xl mx-auto px-2 sm:px-0">
+            Access production-ready APIs, monitor usage in real time, and manage
+            credits effortlessly. No setup. No downtime. Just pure performance.
+          </p>
+
+          {/* 🔥 New Brand Tagline */}
+          <p className="text-sm sm:text-base md:text-lg text-muted-foreground italic">
+            {/* The fastest way to power your apps with ready-made APIs. */}
+            Launch features in minutes, not weeks — powered by our APIs.
           </p>
 
           {/* Buttons */}
@@ -50,15 +56,15 @@ const HeroSection = () => {
               variant="outline"
               className="w-full sm:w-auto text-base sm:text-lg px-6 sm:px-8"
             >
-              View Credit History
+              Explore APIs
             </Button>
           </div>
 
-          {/* Tagline Bar */}
+          {/* Feature Tagline Bar */}
           <div className="flex flex-wrap justify-center gap-3 sm:gap-4 md:gap-6 lg:gap-8 pt-6 sm:pt-8 text-xs sm:text-sm text-muted-foreground px-4">
             {[
               "⚡ Real-time API Response",
-              "💳 Transparent Credit System",
+              // "💳 Transparent Credit System",
               "📊 Developer Dashboard",
               "🔒 Secure Authentication",
               "🌍 Global API Endpoints",

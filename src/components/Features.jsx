@@ -1,45 +1,58 @@
 import { motion } from "framer-motion";
 import { useInView } from "framer-motion";
 import { useRef } from "react";
-import { Zap, Shield, TrendingUp, HeadphonesIcon, Globe, BarChart3 } from "lucide-react";
+import {
+  Zap,
+  Shield,
+  TrendingUp,
+  HeadphonesIcon,
+  Globe,
+  BarChart3,
+} from "lucide-react";
 
 const features = [
   {
     icon: Zap,
-    title: "Lightning Fast Hosting",
-    description: "Blazing-fast load times with global CDN. Your visitors won't wait.",
-    gradient: "from-yellow-500 to-orange-500"
+    title: "Instant API Integration",
+    description:
+      "Connect powerful APIs in seconds with our simple, developer-friendly documentation and SDKs.",
+    gradient: "from-yellow-500 to-orange-500",
   },
   {
     icon: Shield,
-    title: "Bank-Grade Security",
-    description: "Free SSL, automatic backups, and enterprise security. Your data is safe.",
-    gradient: "from-green-500 to-emerald-500"
+    title: "Enterprise-Level Security",
+    description:
+      "All APIs are secured with authentication, rate limits, and encryption — your data stays protected.",
+    gradient: "from-green-500 to-emerald-500",
   },
   {
     icon: TrendingUp,
-    title: "SEO Optimized",
-    description: "Built for search engines. Get found by customers who matter.",
-    gradient: "from-blue-500 to-cyan-500"
+    title: "Scalable & Reliable",
+    description:
+      "Our infrastructure is optimized for performance and uptime, so your integrations never break.",
+    gradient: "from-blue-500 to-cyan-500",
   },
   {
     icon: HeadphonesIcon,
-    title: "24/7 Support",
-    description: "Real humans, ready to help. No bots, no ticket queues.",
-    gradient: "from-purple-500 to-pink-500"
+    title: "Developer Support",
+    description:
+      "Get real-time assistance and troubleshooting from our API experts — no bots, just humans.",
+    gradient: "from-purple-500 to-pink-500",
   },
   {
     icon: Globe,
-    title: "Custom Domain",
-    description: "Your brand, your domain. We handle all the technical setup.",
-    gradient: "from-indigo-500 to-purple-500"
+    title: "Global Availability",
+    description:
+      "APIs powered by a worldwide network, ensuring low-latency performance wherever your users are.",
+    gradient: "from-indigo-500 to-purple-500",
   },
   {
     icon: BarChart3,
-    title: "Analytics Dashboard",
-    description: "Track visitors, conversions, and growth. Data-driven decisions made easy.",
-    gradient: "from-pink-500 to-rose-500"
-  }
+    title: "Usage Analytics",
+    description:
+      "Monitor API calls, performance metrics, and costs in one dashboard — make data-driven decisions.",
+    gradient: "from-pink-500 to-rose-500",
+  },
 ];
 
 const Features = () => {
@@ -56,10 +69,14 @@ const Features = () => {
           className="text-center mb-16"
         >
           <h2 className="text-4xl lg:text-5xl font-bold mb-4">
-            Everything You Need, <span className="bg-gradient-primary bg-clip-text text-transparent">Nothing You Don't</span>
+            Everything You Need for{" "}
+            <span className="bg-gradient-primary bg-clip-text text-transparent">
+              Effortless API Integration
+            </span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            Premium features that big agencies charge extra for — included in every plan.
+            Power your applications with secure, scalable, and ready-to-use APIs
+            — all from one unified platform.
           </p>
         </motion.div>
 
@@ -73,10 +90,12 @@ const Features = () => {
               className="group"
             >
               <div className="bg-card border border-border rounded-xl p-6 h-full hover:shadow-card hover:border-primary/50 transition-all duration-300 hover:-translate-y-1">
-                <div className={`w-12 h-12 rounded-lg bg-gradient-to-br ${feature.gradient} p-3 mb-4 group-hover:scale-110 transition-transform duration-300`}>
+                <div
+                  className={`w-12 h-12 rounded-lg bg-gradient-to-br ${feature.gradient} p-3 mb-4 group-hover:scale-110 transition-transform duration-300`}
+                >
                   <feature.icon className="w-full h-full text-white" />
                 </div>
-                
+
                 <h3 className="text-xl font-semibold mb-2">{feature.title}</h3>
                 <p className="text-muted-foreground text-sm leading-relaxed">
                   {feature.description}
